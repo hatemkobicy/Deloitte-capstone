@@ -105,16 +105,6 @@ Their API must (a) serve the exact JSON shape above and (b) return the header
 `Access-Control-Allow-Origin: *` (or your Pages origin specifically) — otherwise browsers will block
 the request as a CORS violation and the dashboard will silently fall back to demo data.
 
-## 4. Hosting on GitHub Pages
-
-1. Create a new **public** GitHub repository (Pages is free for public repos; private repos need
-   GitHub Pro, or the free GitHub Student Developer Pack if you're a student).
-2. Add `index.html`, `data.json`, and this `README.md` to the repo root, then commit and push.
-3. In the repo, go to **Settings → Pages**.
-4. Under **Build and deployment → Source**, choose **Deploy from a branch**.
-4. Under **Branch**, choose `main` and folder `/ (root)`, then **Save**.
-5. Wait ~30–60 seconds, then refresh the Pages settings page — your live link appears at the top:
-   `https://<your-username>.github.io/<repo-name>/`
 6. Share that link. Every future push to `main` (including a new `data.json` from your teammates)
    redeploys automatically within about a minute.
 
