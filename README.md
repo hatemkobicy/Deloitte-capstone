@@ -105,10 +105,7 @@ Their API must (a) serve the exact JSON shape above and (b) return the header
 `Access-Control-Allow-Origin: *` (or your Pages origin specifically) — otherwise browsers will block
 the request as a CORS violation and the dashboard will silently fall back to demo data.
 
-6. Share that link. Every future push to `main` (including a new `data.json` from your teammates)
-   redeploys automatically within about a minute.
-
-## 5. Local preview before pushing
+## 4. Local preview before pushing
 
 No build step needed — just open `index.html` directly in a browser, or serve the folder locally:
 ```bash
